@@ -1,0 +1,15 @@
+#随机分组
+
+# 方法一
+ 
+library(randomizeR)
+ 
+rar <- rarPar(60)
+randnum <- genSeq(rar,seed = 1000)
+write.csv(getRandList(randnum),"d:/trialnum.csv",row.names =F)
+ 
+# 方法二
+set.seed(1000)
+group <- sample(c("A","B"),60,replace=T)
+num <- rnorm(60)
+trialnum <- data.frame(num,group)
