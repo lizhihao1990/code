@@ -1,0 +1,11 @@
+
+theme(legend.position="none", #图历设置
+        panel.grid=element_blank(), # 去网格
+        panel.border = element_rect(size = 1.5,color = "black"), #设置边框颜色和粗细
+        # legend.title = element_blank(), # 去图历标题
+        # legend.text= element_text(face="bold", color="black",family = "Times", size=8), #图历字体，颜色，大小样式
+        plot.title = element_text(hjust = 0.5), # title位置居中
+        axis.text.x = element_text(face="bold", color="black", size=14), # 以下为X、y轴 字体样式，颜色，大小
+        axis.text.y = element_text(face="bold",  color="black", size=14),
+        axis.title.x = element_text(face="bold", color="black", size=14),
+        axis.title.y = element_text(face="bold",color="black", size=14))
